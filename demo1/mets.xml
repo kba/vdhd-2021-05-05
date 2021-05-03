@@ -4,6 +4,9 @@
     <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="CREATOR">
       <mets:name>ocrd/core v2.24.0</mets:name>
     </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="layout/segmentation/region">
+      <mets:name>ocrd-tesserocr-recognize v0.12.0 (tesseract 5.0.0-alpha-20201231)</mets:name>
+    </mets:agent>
   </mets:metsHdr>
   <mets:dmdSec ID="DMDLOG_0001">
     <mets:mdWrap MDTYPE="MODS">
@@ -79,68 +82,150 @@
         <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="IMG/2917685.0001.001.umich.edu_0020.tif"/>
       </mets:file>
     </mets:fileGrp>
+    <mets:fileGrp USE="OCR-TESS">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0001">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0001.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0002">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0002.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0003">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0003.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0004">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0004.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0005">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0005.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0006">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0006.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0007">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0007.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0008">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0008.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0009">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0009.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0010">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0010.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0011">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0011.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0012">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0012.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0013">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0013.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0014">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0014.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0015">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0015.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0016">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0016.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0017">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0017.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0018">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0018.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0019">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0019.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-TESS_0020">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="OCR-TESS/OCR-TESS_0020.xml"/>
+      </mets:file>
+    </mets:fileGrp>
   </mets:fileSec>
   <mets:structMap TYPE="PHYSICAL">
     <mets:div TYPE="physSequence">
       <mets:div TYPE="page" ID="PHYS_0001">
         <mets:fptr FILEID="IMG_0001"/>
+        <mets:fptr FILEID="OCR-TESS_0001"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0002">
         <mets:fptr FILEID="IMG_0002"/>
+        <mets:fptr FILEID="OCR-TESS_0002"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0003">
         <mets:fptr FILEID="IMG_0003"/>
+        <mets:fptr FILEID="OCR-TESS_0003"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0004">
         <mets:fptr FILEID="IMG_0004"/>
+        <mets:fptr FILEID="OCR-TESS_0004"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0005">
         <mets:fptr FILEID="IMG_0005"/>
+        <mets:fptr FILEID="OCR-TESS_0005"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0006">
         <mets:fptr FILEID="IMG_0006"/>
+        <mets:fptr FILEID="OCR-TESS_0006"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0007">
         <mets:fptr FILEID="IMG_0007"/>
+        <mets:fptr FILEID="OCR-TESS_0007"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0008">
         <mets:fptr FILEID="IMG_0008"/>
+        <mets:fptr FILEID="OCR-TESS_0008"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0009">
         <mets:fptr FILEID="IMG_0009"/>
+        <mets:fptr FILEID="OCR-TESS_0009"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0010">
         <mets:fptr FILEID="IMG_0010"/>
+        <mets:fptr FILEID="OCR-TESS_0010"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0011">
         <mets:fptr FILEID="IMG_0011"/>
+        <mets:fptr FILEID="OCR-TESS_0011"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0012">
         <mets:fptr FILEID="IMG_0012"/>
+        <mets:fptr FILEID="OCR-TESS_0012"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0013">
         <mets:fptr FILEID="IMG_0013"/>
+        <mets:fptr FILEID="OCR-TESS_0013"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0014">
         <mets:fptr FILEID="IMG_0014"/>
+        <mets:fptr FILEID="OCR-TESS_0014"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0015">
         <mets:fptr FILEID="IMG_0015"/>
+        <mets:fptr FILEID="OCR-TESS_0015"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0016">
         <mets:fptr FILEID="IMG_0016"/>
+        <mets:fptr FILEID="OCR-TESS_0016"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0017">
         <mets:fptr FILEID="IMG_0017"/>
+        <mets:fptr FILEID="OCR-TESS_0017"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0018">
         <mets:fptr FILEID="IMG_0018"/>
+        <mets:fptr FILEID="OCR-TESS_0018"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0019">
         <mets:fptr FILEID="IMG_0019"/>
+        <mets:fptr FILEID="OCR-TESS_0019"/>
       </mets:div>
       <mets:div TYPE="page" ID="PHYS_0020">
         <mets:fptr FILEID="IMG_0020"/>
+        <mets:fptr FILEID="OCR-TESS_0020"/>
       </mets:div>
     </mets:div>
   </mets:structMap>
