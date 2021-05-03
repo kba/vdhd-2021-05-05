@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="FILE_0021_OCR-D-SEG">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.24.0</pc:Creator>
+        <pc:Created>2021-05-03T16:12:53.657388</pc:Created>
+        <pc:LastChange>2021-05-03T16:12:53.657388</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-cis-ocropy-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="ocropy" type="method"/>
+                <pc:Label value="0.5" type="threshold"/>
+                <pc:Label value="False" type="grayscale"/>
+                <pc:Label value="0.0" type="maxskew"/>
+                <pc:Label value="0" type="noise_maxsize"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="page" type="level-of-operation"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-binarize"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="50.0" type="rulerRatioMax"/>
+                <pc:Label value="3.0" type="rulerRatioMin"/>
+                <pc:Label value="0.3" type="rulerAreaMax"/>
+                <pc:Label value="0.01" type="rulerAreaMin"/>
+                <pc:Label value="0.95" type="rulerWidthMax"/>
+                <pc:Label value="0.05" type="columnAreaMin"/>
+                <pc:Label value="0.04" type="columnSepWidthMax"/>
+                <pc:Label value="0.25" type="marginTop"/>
+                <pc:Label value="0.75" type="marginBottom"/>
+                <pc:Label value="0.3" type="marginLeft"/>
+                <pc:Label value="0.7" type="marginRight"/>
+                <pc:Label value="10" type="padding"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="1.4.1" type="ocrd-anybaseocr-crop"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-skimage-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="li" type="method"/>
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="301" type="window_size"/>
+                <pc:Label value="0.34" type="k"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.7" type="ocrd-skimage-binarize"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/despeckling" value="ocrd-skimage-denoise">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="0.0" type="protect"/>
+                <pc:Label value="1.0" type="maxsize"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.7" type="ocrd-skimage-denoise"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/deskewing" value="ocrd-tesserocr-deskew">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="operation_level"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="1.5" type="min_orientation_confidence"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.12.0" type="ocrd-tesserocr-deskew"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-segment">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="20" type="maxcolseps"/>
+                <pc:Label value="20" type="maxseps"/>
+                <pc:Label value="10" type="maximages"/>
+                <pc:Label value="4" type="csminheight"/>
+                <pc:Label value="10" type="hlminwidth"/>
+                <pc:Label value="0.01" type="gap_height"/>
+                <pc:Label value="1.5" type="gap_width"/>
+                <pc:Label value="True" type="overwrite_order"/>
+                <pc:Label value="True" type="overwrite_separators"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+                <pc:Label value="2.4" type="spread"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-segment"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="DEFAULT/FILE_0021_DEFAULT.jpg" imageWidth="800" imageHeight="1187" orientation="0." readingDirection="left-to-right" textLineOrder="top-to-bottom">
+        <pc:AlternativeImage filename="OCR-D-BIN/FILE_0021_OCR-D-BIN.IMG-BIN.png" comments=",binarized"/>
+        <pc:AlternativeImage filename="OCR-D-CROP/FILE_0021_OCR-D-CROP.IMG-CROP.png" comments=",binarized,cropped"/>
+        <pc:AlternativeImage filename="OCR-D-BIN2/FILE_0021_OCR-D-BIN2.IMG-BIN.png" comments=",cropped,binarized"/>
+        <pc:AlternativeImage filename="OCR-D-BIN-DENOISE/FILE_0021_OCR-D-BIN-DENOISE.IMG-DEN.png" comments=",cropped,binarized,despeckled"/>
+        <pc:AlternativeImage filename="OCR-D-BIN-DENOISE-DESKEW/FILE_0021_OCR-D-BIN-DENOISE-DESKEW.IMG-DESKEW.png" comments=",cropped,binarized,despeckled,deskewed"/>
+        <pc:AlternativeImage filename="OCR-D-SEG/FILE_0021_OCR-D-SEG.IMG-CLIP.png" comments=",cropped,binarized,despeckled,deskewed,clipped"/>
+        <pc:Border>
+            <pc:Coords points="176,51 780,51 780,1071 176,1071"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0001"/>
+                <pc:RegionRefIndexed index="1" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0002"/>
+                <pc:RegionRefIndexed index="2" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0003"/>
+                <pc:RegionRefIndexed index="3" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0004"/>
+                <pc:RegionRefIndexed index="4" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0005"/>
+                <pc:RegionRefIndexed index="5" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0006"/>
+                <pc:RegionRefIndexed index="6" regionRef="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0001">
+            <pc:Coords points="297,54 222,56 199,60 190,70 189,76 191,115 201,124 705,128 751,125 755,122 760,108 760,79 756,75 692,63"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0001_line0001">
+                <pc:Coords points="313,54 289,56 284,61 283,72 260,71 258,64 251,58 240,60 234,56 225,56 218,60 199,60 190,71 191,115 201,124 377,123 429,125 486,126 545,125 686,127 695,127 751,125 755,122 756,112 760,107 760,80 757,76 701,75 690,63 678,64 672,76 621,74 620,66 615,61 612,61 604,62 592,75 558,74 556,66 552,63 538,65 533,74 508,74 492,73 488,64 474,64 463,58 420,58 407,61 332,57 322,54"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0002">
+            <pc:Coords points="271,150 215,156 212,169 216,188 229,197 295,201 638,209 722,207 734,196 734,168 730,164 722,163 592,153"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0002_line0001">
+                <pc:Coords points="281,150 275,155 251,156 246,152 233,154 231,156 215,156 212,166 215,170 216,188 229,197 254,195 300,198 304,201 313,201 317,198 573,203 596,201 612,202 618,208 631,208 637,202 646,202 654,203 659,208 675,208 679,205 722,207 734,196 734,169 729,164 628,161 617,160 612,155 593,159 586,153 578,153 572,158 552,153 545,158 505,160 474,157 470,154 455,156 422,152 377,153 363,156 340,151 335,155 314,156 309,152 300,152 296,155 290,150"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0003">
+            <pc:Coords points="358,219 319,221 315,225 315,253 324,264 497,273 567,266 575,264 578,260 578,232 574,228 454,219"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0003_line0001">
+                <pc:Coords points="370,219 366,222 318,222 315,226 315,254 319,258 325,264 349,265 474,267 479,272 493,272 500,267 570,265 573,264 578,260 578,233 573,228 454,225 447,219 437,219 429,224 400,225 384,224 378,219"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0004">
+            <pc:Coords points="251,452 206,455 202,459 202,474 211,483 255,488 561,497 627,494 662,487 671,479 671,462 667,458"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0004_line0001">
+                <pc:Coords points="260,452 207,455 202,460 202,474 211,483 243,483 259,488 361,488 506,494 515,491 563,490 576,496 579,496 587,493 625,494 639,487 662,487 671,479 671,463 666,458 605,461 587,458 582,462 559,456 478,455 464,456 441,462 408,463 404,456 396,454 338,453 328,457 314,452"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0005">
+            <pc:Coords points="415,552 415,607 416,617 420,620 693,625 744,625 752,621 753,571 734,557"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0005_line0001">
+                <pc:Coords points="415,552 416,617 421,620 428,618 428,589 439,581 448,584 452,576 458,585 467,583 478,589 484,577 492,584 496,583 503,587 511,586 512,580 516,577 520,581 520,586 530,583 535,587 543,585 547,578 552,587 566,593 572,591 578,578 585,592 601,587 610,578 615,582 615,589 619,594 636,592 642,578 648,584 651,595 655,596 668,592 673,579 678,583 678,590 682,594 696,594 698,586 703,581 709,585 711,592 717,595 730,597 737,590 747,597 752,591 752,585 752,570 734,557"/>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0005_line0002">
+                <pc:Coords points="452,577 448,585 439,582 429,589 429,618 468,618 484,621 500,617 526,616 533,621 543,622 552,616 595,623 650,621 679,624 703,621 725,625 742,625 752,621 752,604 747,598 737,591 730,598 713,595 705,582 699,586 696,595 682,595 673,580 668,593 655,597 650,595 648,586 642,579 636,593 619,595 611,579 601,588 600,593 585,593 578,579 573,591 566,594 552,588 547,579 543,586 535,588 530,584 520,587 519,581 515,578 511,587 503,588 496,584 492,585 484,578 478,590 467,584 458,586"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0006">
+            <pc:Coords points="279,716 277,739 281,746 301,750 316,748 321,744 320,716"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0006_line0001">
+                <pc:Coords points="277,738 282,746 291,748 316,748 321,744 320,716 279,716"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007">
+            <pc:Coords points="594,757 437,803 385,855 385,872 394,882 556,1050 569,1054 590,1051 621,1023 753,876 751,849 694,790 659,765 641,757"/>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007_line0001">
+                <pc:Coords points="595,757 590,762 590,784 595,789 675,787 671,776 663,768 640,757"/>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007_line0002">
+                <pc:Coords points="473,796 435,805 434,806 429,822 412,828 411,829 408,839 385,855 385,872 405,888 417,901 420,909 420,909 435,918 469,913 475,907 478,896 508,877 519,863 526,861 559,858 667,858 669,882 683,886 727,888 753,876 751,850 750,848 722,839 681,839 676,844 676,851 672,853 562,853 561,830 558,826 488,813 486,799 482,796"/>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007_line0003">
+                <pc:Coords points="675,788 625,791 625,822 635,832 672,831 677,835 688,834 694,826 706,825 713,817 708,805 701,798 687,790"/>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007_line0004">
+                <pc:Coords points="495,885 488,890 487,898 477,901 476,916 453,939 458,948 460,951 471,958 483,970 485,977 488,980 507,995 512,996 526,989 536,990 535,993 527,993 529,1018 535,1025 539,1022 548,1026 560,1021 571,1026 587,1016 590,1021 589,1030 593,1030 605,1018 625,1018 627,1016 634,1005 633,995 648,978 652,961 603,958 598,953 589,953 582,958 575,958 574,955 600,944 606,944 614,951 662,952 670,946 673,936 699,928 715,912 712,903 706,902 610,899 604,906 598,906 549,897 547,890 541,886"/>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_region0007_line0005">
+                <pc:Coords points="585,1018 571,1027 560,1022 548,1027 539,1023 536,1026 556,1050 570,1053 587,1051 591,1050 595,1034 610,1019 605,1019 593,1031 589,1031 589,1021"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:ImageRegion id="FILE_0021_OCR-D-BIN-DENOISE-DESKEW_image0008">
+            <pc:Coords points="217,483 176,484 176,1064 433,1066 498,1070 779,1070 779,489 639,488 624,498 589,497 584,501 575,501 563,491 551,497 525,497 517,494 509,499 498,496 374,495 360,490 350,494 266,494 254,491 243,484"/>
+        </pc:ImageRegion>
+    </pc:Page>
+</pc:PcGts>

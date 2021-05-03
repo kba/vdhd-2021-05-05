@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="FILE_0010_OCR-D-OCR">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.24.0</pc:Creator>
+        <pc:Created>2021-05-03T16:12:43.728783</pc:Created>
+        <pc:LastChange>2021-05-03T16:12:43.728783</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-cis-ocropy-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="ocropy" type="method"/>
+                <pc:Label value="0.5" type="threshold"/>
+                <pc:Label value="False" type="grayscale"/>
+                <pc:Label value="0.0" type="maxskew"/>
+                <pc:Label value="0" type="noise_maxsize"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="page" type="level-of-operation"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-binarize"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="50.0" type="rulerRatioMax"/>
+                <pc:Label value="3.0" type="rulerRatioMin"/>
+                <pc:Label value="0.3" type="rulerAreaMax"/>
+                <pc:Label value="0.01" type="rulerAreaMin"/>
+                <pc:Label value="0.95" type="rulerWidthMax"/>
+                <pc:Label value="0.05" type="columnAreaMin"/>
+                <pc:Label value="0.04" type="columnSepWidthMax"/>
+                <pc:Label value="0.25" type="marginTop"/>
+                <pc:Label value="0.75" type="marginBottom"/>
+                <pc:Label value="0.3" type="marginLeft"/>
+                <pc:Label value="0.7" type="marginRight"/>
+                <pc:Label value="10" type="padding"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="1.4.1" type="ocrd-anybaseocr-crop"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-skimage-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="li" type="method"/>
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="301" type="window_size"/>
+                <pc:Label value="0.34" type="k"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.7" type="ocrd-skimage-binarize"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/despeckling" value="ocrd-skimage-denoise">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="0.0" type="protect"/>
+                <pc:Label value="1.0" type="maxsize"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.7" type="ocrd-skimage-denoise"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/deskewing" value="ocrd-tesserocr-deskew">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="operation_level"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="1.5" type="min_orientation_confidence"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.12.0" type="ocrd-tesserocr-deskew"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-segment">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="20" type="maxcolseps"/>
+                <pc:Label value="20" type="maxseps"/>
+                <pc:Label value="10" type="maximages"/>
+                <pc:Label value="4" type="csminheight"/>
+                <pc:Label value="10" type="hlminwidth"/>
+                <pc:Label value="0.01" type="gap_height"/>
+                <pc:Label value="1.5" type="gap_width"/>
+                <pc:Label value="True" type="overwrite_order"/>
+                <pc:Label value="True" type="overwrite_separators"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+                <pc:Label value="2.4" type="spread"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-segment"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/dewarping" value="ocrd-cis-ocropy-dewarp">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="4.0" type="range"/>
+                <pc:Label value="1.0" type="smoothness"/>
+                <pc:Label value="0.05" type="max_neighbour"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-dewarp"/>
+                <pc:Label value="2.24.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="qurator-gt4histocr-1.0" type="checkpoint_dir"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+                <pc:Label value="/home/kba/.local/share/ocrd-resources/ocrd-calamari-recognize/qurator-gt4histocr-1.0/*.ckpt.json" type="checkpoint"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="DEFAULT/FILE_0010_DEFAULT.jpg" imageWidth="800" imageHeight="1185" orientation="0.2638286231726" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+        <pc:AlternativeImage filename="OCR-D-BIN/FILE_0010_OCR-D-BIN.IMG-BIN.png" comments=",binarized"/>
+        <pc:AlternativeImage filename="OCR-D-CROP/FILE_0010_OCR-D-CROP.IMG-CROP.png" comments=",binarized,cropped"/>
+        <pc:AlternativeImage filename="OCR-D-BIN2/FILE_0010_OCR-D-BIN2.IMG-BIN.png" comments=",cropped,binarized"/>
+        <pc:AlternativeImage filename="OCR-D-BIN-DENOISE/FILE_0010_OCR-D-BIN-DENOISE.IMG-DEN.png" comments=",cropped,binarized,despeckled"/>
+        <pc:AlternativeImage filename="OCR-D-BIN-DENOISE-DESKEW/FILE_0010_OCR-D-BIN-DENOISE-DESKEW.IMG-DESKEW.png" comments=",cropped,binarized,despeckled,deskewed"/>
+        <pc:AlternativeImage filename="OCR-D-SEG/FILE_0010_OCR-D-SEG.IMG-CLIP.png" comments=",cropped,binarized,despeckled,deskewed,clipped"/>
+        <pc:Border>
+            <pc:Coords points="92,50 723,50 723,1102 92,1102"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001"/>
+                <pc:RegionRefIndexed index="1" regionRef="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001">
+            <pc:Coords points="232,50 92,59 92,512 723,509 723,57 600,51 423,50"/>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0001">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0001.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="553,51 545,59 535,58 527,53 502,53 498,56 476,53 462,58 450,72 443,72 442,66 434,58 414,54 397,55 386,67 385,73 371,73 369,67 359,58 331,56 324,62 291,64 281,60 262,61 255,55 247,65 230,65 222,53 215,53 210,57 200,54 190,67 189,82 176,82 170,69 159,60 92,60 92,89 176,93 181,86 193,86 197,90 206,88 222,92 230,91 235,86 250,86 280,91 327,89 361,94 372,85 385,85 391,92 434,91 442,83 448,83 457,92 512,88 520,91 573,93 592,87 613,88 619,92 645,90 653,81 667,81 675,89 723,90 723,57 699,58 686,55 675,54 667,64 666,71 652,71 650,64 640,54 627,58 622,53 613,53 603,58 594,52"/>
+                <pc:TextEquiv conf="0.980379521846771">
+                    <pc:Unicode>rangen, daß daher trotz aller politiſchen Freiheit die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0002">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0002.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="255,50 256,56 262,60 281,59 291,63 319,62 330,56 330,50"/>
+                <pc:TextEquiv conf="0.">
+                    <pc:Unicode></pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0003">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0003.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,123 149,122 181,126 200,121 230,122 240,114 246,114 255,123 292,120 301,125 313,121 327,123 332,120 431,119 438,122 475,120 575,124 628,121 633,124 644,123 658,111 664,111 671,122 677,123 710,123 721,118 721,100 717,95 691,91 675,91 667,99 657,99 647,91 619,93 604,88 585,89 573,94 520,92 512,89 463,91 453,92 444,99 435,92 391,93 381,101 373,101 365,94 327,90 280,92 273,89 253,89 246,97 236,97 230,92 217,93 200,90 189,105 187,100 178,94 92,90"/>
+                <pc:TextEquiv conf="0.923839211463928">
+                    <pc:Unicode>Eriſtenz der Einzelnen immor mehr in Frage g</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0004">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0004.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="200,122 181,127 149,123 92,124 92,153 132,157 184,153 189,156 216,156 224,148 235,148 238,152 284,152 314,156 378,156 384,153 396,153 399,156 428,155 435,152 448,155 477,152 543,155 552,146 559,146 562,153 568,156 592,157 603,153 644,153 653,144 664,144 671,154 688,151 723,152 723,122 670,123 668,128 653,128 647,123 633,125 628,122 562,124 560,128 556,128 554,123 524,122 512,124 475,121 438,123 431,120 332,121 327,124 313,122 301,126 292,121 285,121 267,122 256,125 252,129 233,129 229,123"/>
+                <pc:TextEquiv conf="0.964890122413635">
+                    <pc:Unicode>tellt wird, — dieſe Thatſache hat bis jetzt bei den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0005">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0005.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="248,152 235,156 224,165 217,157 189,157 184,154 136,158 92,154 92,189 126,191 137,186 270,185 335,188 353,185 405,189 432,184 472,184 522,189 539,188 552,179 559,179 571,188 610,190 640,187 652,177 657,177 670,187 686,190 723,187 723,153 688,152 670,155 660,163 652,163 644,154 603,154 592,158 563,155 559,162 549,162 543,156 507,153 460,156 437,153 428,156 399,157 396,154 378,157 314,157"/>
+                <pc:TextEquiv conf="0.982453584671021">
+                    <pc:Unicode>Regierenden und b den beſitenden Claſſen durchaus nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0006">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0006.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="137,187 126,192 92,190 92,222 107,222 118,215 123,215 137,220 148,218 174,222 193,218 237,217 247,220 297,217 305,220 344,218 350,222 384,218 439,221 476,219 485,216 516,218 527,215 532,209 530,189 472,185 432,185 405,190 353,186 335,189 270,186"/>
+                <pc:TextEquiv conf="0.973791241645813">
+                    <pc:Unicode>ie ihr zukommende Beachtung gefunden</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0007">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0007.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="576,215 564,226 562,240 557,228 546,220 529,216 516,219 485,217 476,220 439,222 418,223 413,220 398,222 388,219 350,223 344,219 305,221 297,218 266,221 193,219 174,223 164,220 128,219 125,226 131,237 131,246 135,250 163,253 193,253 212,248 245,252 255,252 262,248 388,253 429,248 449,251 517,252 552,252 567,249 613,249 619,252 723,250 723,220 681,220 670,214 637,214 631,220 608,221 596,216"/>
+                <pc:TextEquiv conf="0.957415282726288">
+                    <pc:Unicode>Das Geſammtheitsbewußtſein und das Bewußtſein</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0008">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0008.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="212,249 193,254 136,251 129,257 128,262 121,262 109,253 92,253 92,283 114,284 120,279 125,279 131,287 152,287 175,283 353,285 447,280 460,284 514,281 533,286 545,282 560,283 567,276 567,269 571,267 585,282 634,286 660,281 670,284 723,282 723,251 619,253 613,250 567,250 552,253 517,253 449,252 429,249 388,254 306,252 290,249 262,249 255,253 245,253"/>
+                <pc:TextEquiv conf="0.948299586772919">
+                    <pc:Unicode>er Jntereſſen Solidarrtat der ganzen Menſchhett</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0009">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0009.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="425,281 353,286 175,284 132,288 120,300 114,285 92,284 92,315 213,316 226,313 241,316 247,313 283,313 313,317 387,317 402,314 412,317 425,312 432,315 510,314 522,318 539,315 549,319 565,317 571,309 582,309 588,314 617,317 633,317 639,313 664,317 723,314 723,283 670,285 660,282 634,287 585,283 580,290 567,290 557,283 532,287 514,282 460,285 447,281"/>
+                <pc:TextEquiv conf="0.927825212478638">
+                    <pc:Unicode>ſt es, das die leztere als Geſellſchaft kennzeichnct</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0010">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0010.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="219,314 213,317 92,316 92,349 320,346 394,351 460,346 568,349 578,340 582,340 593,350 626,351 658,346 672,349 686,346 723,346 723,316 664,318 641,314 633,318 587,315 582,325 575,325 566,318 549,320 531,316 522,319 510,315 432,316 422,313 412,318 402,315 387,318 313,318 283,314 247,314 241,317"/>
+                <pc:TextEquiv conf="0.965586960315704">
+                    <pc:Unicode>Dieſe Jntereſſen Solidaritat erfordert daß edem Angehorigen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0011">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0011.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="182,348 160,351 92,351 92,380 155,381 166,384 174,381 195,383 201,379 213,381 289,378 369,378 393,382 404,378 572,380 577,373 583,373 588,380 642,377 652,382 672,378 723,380 723,347 686,347 672,350 658,347 626,352 593,351 585,360 584,367 576,367 576,358 568,350 460,347 394,352 320,347 228,347 225,350 213,347"/>
+                <pc:TextEquiv conf="0.922760128974915">
+                    <pc:Unicode>der Geſellſchaft di Eriſtenz innerhalb dieſr ermoglicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0012">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0012.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,412 106,415 119,412 141,416 164,413 221,413 229,409 300,410 342,414 352,411 375,413 398,410 478,409 503,414 594,413 604,409 616,413 663,412 669,409 716,411 722,410 723,408 723,381 722,381 672,379 652,383 642,378 602,379 577,383 566,379 524,381 410,379 393,383 369,379 213,382 201,380 195,384 174,382 166,385 155,382 103,383 92,380"/>
+                <pc:TextEquiv conf="0.936314821243286">
+                    <pc:Unicode>bezw geſtchert wird Wenn dic Geſellſchaft den Arbtts</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0013">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0013.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="229,410 221,414 164,414 152,417 92,413 92,446 153,446 180,443 223,444 231,436 231,430 236,424 240,439 245,443 258,445 273,445 278,442 319,445 362,442 400,447 457,442 494,442 522,447 540,444 619,445 636,441 657,442 669,446 723,444 723,410 669,410 663,413 616,414 604,410 594,414 503,415 478,410 398,411 375,414 352,412 342,415 300,411"/>
+                <pc:TextEquiv conf="0.935841917991638">
+                    <pc:Unicode>laſen ſeinem Schickſal uberlaßt ſo drangt ſie ihn einfach</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0014">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0014.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="180,444 153,447 92,447 92,479 195,480 256,474 350,477 372,474 423,473 445,476 526,474 537,477 575,475 599,478 655,476 667,473 723,475 723,445 669,447 657,443 636,442 619,446 540,445 522,448 494,443 401,448 362,443 339,446 296,443 278,443 273,446 245,444 237,465 233,467 230,453 223,445"/>
+                <pc:TextEquiv conf="0.907873272895813">
+                    <pc:Unicode>uf di Pfade des Anarchtsmus d h zir Kriegserklarung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0015">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0001_line0015.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="256,475 195,481 92,480 92,512 126,511 217,509 239,509 242,511 308,510 325,509 337,510 723,509 723,476 667,474 655,477 599,479 575,476 537,478 526,475 445,477 423,474 372,475 350,478"/>
+                <pc:TextEquiv conf="0.969417154788971">
+                    <pc:Unicode>zegen eine menſchlicht Geſellſchaft ohne Menſchlichketsgefuhl</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>rangen, daß daher trotz aller politiſchen Freiheit die
+
+Eriſtenz der Einzelnen immor mehr in Frage g
+tellt wird, — dieſe Thatſache hat bis jetzt bei den
+Regierenden und b den beſitenden Claſſen durchaus nicht
+ie ihr zukommende Beachtung gefunden
+Das Geſammtheitsbewußtſein und das Bewußtſein
+er Jntereſſen Solidarrtat der ganzen Menſchhett
+ſt es, das die leztere als Geſellſchaft kennzeichnct
+Dieſe Jntereſſen Solidaritat erfordert daß edem Angehorigen
+der Geſellſchaft di Eriſtenz innerhalb dieſr ermoglicht
+bezw geſtchert wird Wenn dic Geſellſchaft den Arbtts
+laſen ſeinem Schickſal uberlaßt ſo drangt ſie ihn einfach
+uf di Pfade des Anarchtsmus d h zir Kriegserklarung
+zegen eine menſchlicht Geſellſchaft ohne Menſchlichketsgefuhl</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002">
+            <pc:Coords points="117,514 92,541 92,1098 99,1101 723,1096 723,513"/>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0001.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="118,514 115,515 111,520 111,535 115,544 129,549 182,549 203,545 217,547 225,544 243,547 271,545 294,549 359,545 374,548 427,547 433,543 446,543 474,548 491,544 500,548 536,550 547,546 576,548 589,545 720,546 723,543 723,513 682,514 681,513 656,513 645,515 634,515 632,513 595,513 593,515 576,513 555,513 534,516 440,515 433,513 390,513 379,516 345,516 340,513 305,513 303,516"/>
+                <pc:TextEquiv conf="0.979776978492737">
+                    <pc:Unicode>Statt dies einzuſehen und demgemaß zu handeln uber</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0002">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0002.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,579 118,583 189,579 244,581 247,578 273,577 359,581 411,578 444,581 537,579 548,582 634,577 723,578 723,545 687,545 672,548 654,545 589,546 576,549 547,547 536,551 522,551 500,549 491,545 478,549 446,544 433,544 427,548 374,549 359,546 294,550 271,546 243,548 225,545 217,548 203,546 182,550 129,550 114,544 92,544"/>
+                <pc:TextEquiv conf="0.941145241260529">
+                    <pc:Unicode>laſſen di beſitzenden Klaſſen di Furſorge fur di Abehr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0003">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0003.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="273,578 247,579 244,582 189,580 118,584 92,580 92,612 131,614 158,611 193,614 200,611 244,610 254,613 291,609 317,611 327,615 350,614 361,609 407,609 425,613 453,610 471,613 478,610 555,613 607,613 613,610 686,609 695,612 723,610 723,580 722,580 634,578 548,583 537,580 444,582 411,579 359,582"/>
+                <pc:TextEquiv conf="0.915413796901703">
+                    <pc:Unicode>der von ihnen ſelbſt auf den rtegspfd gedrangten Arbeits</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0004">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0004.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="290,610 254,614 244,611 200,612 193,615 158,612 131,615 92,613 92,643 185,646 210,642 313,642 323,645 335,642 426,641 498,645 517,643 536,646 543,643 563,645 570,642 636,642 651,645 688,642 723,642 723,614 686,610 613,611 607,614 499,611 478,611 471,614 453,611 425,614 407,610 361,610 350,615 327,616 317,612"/>
+                <pc:TextEquiv conf="0.966844916343689">
+                    <pc:Unicode>loſen lediglich der Polizei Dicſe thut ſelbſtoerſtandlich ihe</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0005">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0005.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,678 96,680 118,676 155,676 167,660 178,661 188,674 219,676 281,674 352,679 382,676 385,679 393,679 408,675 428,677 515,673 524,677 723,676 723,643 688,643 651,646 636,643 570,643 563,646 543,644 536,647 517,644 498,646 426,642 335,643 329,646 313,643 210,643 191,647 92,644"/>
+                <pc:TextEquiv conf="0.9567591547966">
+                    <pc:Unicode>Pflicht Aber due Geſellſchaft hat damtt ih Pflicht nicht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0006">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0006.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="188,675 184,680 182,697 162,697 154,677 118,677 101,681 92,679 92,708 107,708 116,712 161,708 165,703 183,703 188,708 234,706 278,710 296,706 344,709 352,706 364,709 455,708 469,705 542,711 560,706 605,707 610,710 633,707 723,707 723,676 703,675 691,678 651,678 647,675 593,679 589,676 524,678 515,674 484,674 472,677 422,678 419,676 408,676 393,680 385,680 382,677 352,680 281,675 219,677"/>
+                <pc:TextEquiv conf="0.951586008071899">
+                    <pc:Unicode>erfüllt Si beſchwort vtelmehr durch diſes herzloſe und</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0007">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0007.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="226,707 188,709 180,729 176,729 170,718 160,709 116,713 107,709 92,709 92,739 129,742 328,738 334,742 398,741 411,738 467,741 512,738 535,741 557,738 576,742 619,744 723,741 723,711 701,708 633,708 610,711 605,708 560,707 542,712 469,706 455,709 364,710 359,707 344,710 296,707 279,711"/>
+                <pc:TextEquiv conf="0.946828484535217">
+                    <pc:Unicode>thorichte Verhalten Gefahren herauf denen ſchließlich di</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0008">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0008.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,774 144,771 158,771 164,774 200,771 223,772 230,766 235,766 241,770 260,770 268,773 310,772 328,775 364,775 381,770 407,770 417,774 470,772 483,769 539,771 550,774 563,770 590,772 598,768 600,749 596,744 557,739 535,742 519,739 467,742 411,739 398,742 334,743 328,739 262,739 234,742 217,739 192,743 92,740"/>
+                <pc:TextEquiv conf="0.912583768367767">
+                    <pc:Unicode>Staatsgewalt nicht nehr gewachſen ſein dirft</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0009">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0009.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="660,767 645,772 638,768 629,780 615,780 599,769 590,773 563,771 550,775 539,772 483,770 470,773 430,774 417,775 407,771 381,771 365,776 241,771 236,778 229,778 223,773 206,771 188,775 164,775 158,772 119,773 113,776 114,794 118,800 131,804 145,803 152,806 185,808 207,802 224,804 233,795 239,795 246,804 312,802 332,807 373,802 477,801 482,804 580,802 592,805 617,805 622,793 626,793 631,802 640,803 723,803 723,772 695,772 679,767"/>
+                <pc:TextEquiv conf="0.977225840091705">
+                    <pc:Unicode>Einzelne Regierungen ſuchen wohl mit allerlet halben</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0010">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0010.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,834 134,836 139,840 220,836 231,829 237,829 245,835 257,836 315,834 333,837 382,837 396,834 484,833 499,836 541,834 549,838 573,839 623,835 632,838 723,835 723,803 664,802 659,805 654,802 631,803 624,807 580,803 482,805 477,802 373,803 332,808 312,803 275,806 261,803 246,805 239,812 230,812 224,805 211,803 185,809 152,807 145,804 131,805 117,800 92,800"/>
+                <pc:TextEquiv conf="0.96874737739563">
+                    <pc:Unicode>Maßregeln und kleinen Mittelchen Abhilfe zu ſchaffen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0011">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0011.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,869 107,870 132,871 143,868 175,872 180,869 196,870 201,867 226,869 235,860 244,860 249,865 300,869 489,868 502,865 516,870 521,867 532,867 535,870 585,867 595,871 613,871 629,866 661,869 723,868 723,836 632,839 623,836 573,840 549,839 541,835 499,837 484,834 396,835 382,838 333,838 315,835 246,835 241,842 230,842 225,836 194,837 184,841 139,841 134,837 92,835"/>
+                <pc:TextEquiv conf="0.976341724395752">
+                    <pc:Unicode>Dahin gehort die Alters und Unfallveiſicheruug das Ge</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0012">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0012.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="249,866 244,871 244,882 240,888 237,886 236,878 228,870 215,870 209,867 196,871 180,870 175,873 143,869 132,872 93,869 92,884 92,900 113,904 140,900 168,902 218,898 254,901 279,898 329,902 339,899 424,900 439,897 445,900 487,901 555,898 633,903 669,899 674,902 723,904 723,869 661,870 629,867 613,872 595,872 585,868 558,868 545,871 521,868 516,871 502,866 489,869 300,870"/>
+                <pc:TextEquiv conf="0.960787832736969">
+                    <pc:Unicode>ſetz der ſußen Sonntagsruhe und dergleichen Cinrichtungen,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0013">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0013.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="218,899 168,903 140,901 121,905 92,901 92,931 247,931 253,934 267,930 361,934 385,930 424,929 432,933 461,930 504,933 560,933 568,930 579,933 648,932 667,929 694,934 723,933 723,906 703,906 689,902 674,903 669,900 633,904 555,899 487,902 431,898 424,901 339,900 329,903 279,899 258,902"/>
+                <pc:TextEquiv conf="0.949672937393188">
+                    <pc:Unicode>die den Arbeitgeber belaſten ohne dem Arbeiter viel zu</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0014">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0014.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="117,932 92,932 92,964 119,964 124,967 153,967 160,964 270,967 291,965 302,970 310,970 315,966 370,965 386,957 398,966 474,964 479,968 491,965 544,965 562,966 566,969 575,969 579,966 596,966 600,969 609,969 613,966 646,965 660,968 723,965 723,934 694,935 667,930 648,933 579,934 572,931 560,934 471,931 432,934 424,930 385,931 361,935 267,931 253,935 247,932 140,935"/>
+                <pc:TextEquiv conf="0.969038426876068">
+                    <pc:Unicode>helfen, wahrend ſie fir den Arbeitloſen uberhaupt nicht in</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0015">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0015.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="92,987 106,1000 123,996 172,996 185,999 212,994 225,997 283,997 297,994 300,989 300,971 297,967 291,966 270,968 160,965 153,968 124,968 119,965 92,965"/>
+                <pc:TextEquiv conf="0.982119202613831">
+                    <pc:Unicode>Betracht kommen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0016">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0016.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="403,992 393,1002 392,1010 388,1012 371,998 358,998 339,993 316,996 301,993 283,998 225,998 212,995 185,1000 172,997 123,997 117,1000 117,1018 125,1030 131,1031 190,1028 251,1030 260,1027 268,1031 306,1031 312,1028 403,1030 410,1027 439,1026 465,1030 492,1026 587,1031 624,1028 675,1030 723,1029 723,998 655,998 641,997 636,993 625,993 620,997 604,993 598,998 577,997 565,993 480,997 468,991 446,992 443,995"/>
+                <pc:TextEquiv conf="0.987624645233154">
+                    <pc:Unicode>Nein durch ſolche kleine Mittelchen wird der Zuſammen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0017">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0017.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="106,1029 92,1039 92,1062 128,1061 159,1064 202,1063 212,1059 234,1062 300,1059 307,1062 341,1064 408,1064 414,1061 481,1058 486,1061 509,1059 520,1063 551,1063 574,1059 596,1060 599,1063 624,1060 628,1063 685,1064 723,1061 723,1030 675,1031 624,1029 587,1032 492,1027 465,1031 439,1027 410,1028 403,1031 312,1029 306,1032 268,1032 260,1028 251,1031 213,1031 197,1029 131,1032"/>
+                <pc:TextEquiv conf="0.960791289806366">
+                    <pc:Unicode>ſtu z, der die moderne Geſellſchaft bedroht icher nicht hintange</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0018">
+                <pc:AlternativeImage filename="OCR-D-SEG-LINE-RESEG-DEWARP/FILE_0010_OCR-D-SEG-LINE-RESEG-DEWARP_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_FILE_0010_OCR-D-BIN-DENOISE-DESKEW_region0002_line0018.IMG-DEWARP.png" comments="binarized,despeckled,dewarped"/>
+                <pc:Coords points="212,1060 202,1064 159,1065 128,1062 92,1063 92,1098 109,1101 109,1101 114,1097 132,1096 277,1094 309,1095 321,1099 352,1099 371,1095 407,1096 410,1099 422,1098 425,1095 463,1094 492,1094 498,1098 499,1098 515,1095 519,1098 545,1097 548,1095 569,1095 572,1097 578,1097 584,1096 585,1097 599,1097 601,1095 606,1097 626,1097 628,1095 680,1094 696,1095 698,1096 723,1096 723,1062 685,1065 628,1064 624,1061 599,1064 596,1061 574,1060 551,1064 520,1064 509,1060 486,1062 481,1059 446,1059 414,1062 408,1065 341,1065 307,1063 300,1060 256,1060 251,1063"/>
+                <pc:TextEquiv conf="0.971512317657471">
+                    <pc:Unicode>halten werden Um grundliche Abhilfe zu ſchaffen muß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Statt dies einzuſehen und demgemaß zu handeln uber
+laſſen di beſitzenden Klaſſen di Furſorge fur di Abehr
+der von ihnen ſelbſt auf den rtegspfd gedrangten Arbeits
+loſen lediglich der Polizei Dicſe thut ſelbſtoerſtandlich ihe
+Pflicht Aber due Geſellſchaft hat damtt ih Pflicht nicht
+erfüllt Si beſchwort vtelmehr durch diſes herzloſe und
+thorichte Verhalten Gefahren herauf denen ſchließlich di
+Staatsgewalt nicht nehr gewachſen ſein dirft
+Einzelne Regierungen ſuchen wohl mit allerlet halben
+Maßregeln und kleinen Mittelchen Abhilfe zu ſchaffen
+Dahin gehort die Alters und Unfallveiſicheruug das Ge
+ſetz der ſußen Sonntagsruhe und dergleichen Cinrichtungen,
+die den Arbeitgeber belaſten ohne dem Arbeiter viel zu
+helfen, wahrend ſie fir den Arbeitloſen uberhaupt nicht in
+Betracht kommen
+Nein durch ſolche kleine Mittelchen wird der Zuſammen
+ſtu z, der die moderne Geſellſchaft bedroht icher nicht hintange
+halten werden Um grundliche Abhilfe zu ſchaffen muß</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+    </pc:Page>
+</pc:PcGts>
