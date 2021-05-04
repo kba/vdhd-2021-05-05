@@ -1,7 +1,7 @@
 # Demos OCR@vDHD Session 1
 
 
-## Demo 1
+## Demo 1 - create workspace, tesseract
 
 > Start with a bunch of images, create workspace, run tesseract
 
@@ -69,7 +69,7 @@ ocrd process "tesserocr-recognize -P segmentation_level region -P textequiv_leve
 
 The results are in the `OCR-D-OCR` file group / folder.
 
-## Demo 2
+## Demo 2 - clone workspace, more complex workflow
 
 > Start with a METS from SBB, run a more complex workflow on it
 
@@ -114,3 +114,30 @@ ocrd process \
 ```
 
 The results are in the `OCR-D-OCR` file group / folder.
+
+## Demo 3 - Demo 1 ... but with docker!
+
+> Same steps as in demo1 until including the adding of files but run tesseract via `ocrd process` in docker
+
+### Download all tesseract models to a local directory
+
+See https://ocr-d.de/en/models#models-and-docker for a pure Docker-based solution
+
+```sh
+cd models
+ocrd resmgr download --location cwd ocrd-tesserocr-recognize '*'
+```
+
+### Minimalist workflow in Docker
+
+```sh
+docker run --user $(id -u):$(id -g) \
+  --volume $PWD/models:/usr/local/share/ocrd-resources/ocrd-tesserocr-recognize \
+  --volume $PWD/workspace:/data \
+  ocrd/all:maximum \
+  ocrd process "tesserocr-recognize -P segmentation_level region -P textequiv_level word -P find_tables true -P model deu -I IMG -O OCR-TESS"
+```
+
+## Inspect results with browse-ocrd and JPageViewer
+
+> Visualize results with [browse-ocrd](https://github.com/hnesk/browse-ocrd/) and [PRImA PageViewer](https://github.com/PRImA-Research-Lab/prima-page-viewer)
