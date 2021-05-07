@@ -141,3 +141,17 @@ docker run --user $(id -u):$(id -g) \
 ## Inspect results with browse-ocrd and JPageViewer
 
 > Visualize results with [browse-ocrd](https://github.com/hnesk/browse-ocrd/) and [PRImA PageViewer](https://github.com/PRImA-Research-Lab/prima-page-viewer)
+> 
+
+## Convert to TEI
+We need a version of the xslt that has been adapted to the ocrd file format: 
+```
+git clone https://github.com/tboenig/page2tei
+```
+
+At the moment, versions newer than 9.9.1.6 of Saxon are not compatible with the xslt due to a change in bracket handling (https://saxonica.plan.io/issues/4407). Version 9.9.1.6 can be downloaded from Sourceforge: [SaxonHE9-9-1-6J.zip](https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-6J.zip/download).
+
+Now we can start converting:
+```
+java -jar path/to/saxon9he.jar -xsl:page2tei/page2tei-0.xsl -s:demo2/mets.xml -o:demo2-tei.xml PAGEprogram=OCRD PAGEXML=OCR-D-OCR
+```
